@@ -8,6 +8,6 @@ end
 target 'OhMySwiftPodLib_Tests', :exclusive => true do
   pod "OhMySwiftPodLib", :path => "../"
 
-  pod 'Quick', '~> 0.3.1'
-  pod 'Nimble'
+pod 'Quick', :git=>"https://github.com/Quick/Quick.git", :commit=>"4609b61c8bd52ec7a4438888c7f6cb9b630537b4"
+pod 'Nimble', :git=>"https://github.com/Quick/Nimble.git", :commit=>"463b70b9d4c0d4d9879fb35e24b2d2109b648eb8"
 end

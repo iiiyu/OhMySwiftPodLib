@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import OhMySwiftPodLib
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let myInstance = MySingletion.sharedManager
+        myInstance.sayHi()
+
+        // 这里应该怎么调用
+//        let tInstance = TestSingleton.sharedManager
+//        tInstance.sayHi()
+
     }
 
     override func didReceiveMemoryWarning() {
