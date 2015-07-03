@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'OhMySwiftPodLib_Example', :exclusive => true do
+  pod "OhMySwiftPodLib", :path => "../"
+end
+
+target 'OhMySwiftPodLib_Tests', :exclusive => true do
+  pod "OhMySwiftPodLib", :path => "../"
+
+  pod 'Quick', '~> 0.3.1'
+  pod 'Nimble'
+end
