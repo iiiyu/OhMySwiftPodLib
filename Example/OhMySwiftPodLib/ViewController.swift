@@ -17,9 +17,9 @@ class ViewController: UIViewController {
         let myInstance = MySingletion.sharedManager
         myInstance.sayHi()
 
-        // 这里应该怎么调用
-//        let tInstance = TestSingleton.sharedManager
-//        tInstance.sayHi()
+
+        let tInstance = TestSingleton.sharedManager
+        tInstance.sayHi()
 
     }
 

@@ -8,11 +8,11 @@
 
 import Foundation
 
-class TestSingleton {
+public class TestSingleton {
 
     private static let sharedInstance = TestSingleton()
 
-    class var sharedManager : TestSingleton {
+    public class var sharedManager : TestSingleton {
         return sharedInstance
     }
 
@@ -20,7 +20,7 @@ class TestSingleton {
         print("init TestSingleton ...");
     }
 
-    func sayHi() {
+    public func sayHi() {
         print("hello world!")
     }
 }
